@@ -1,0 +1,153 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+header {
+    min-width: 100%;
+    height: 208px;
+    background-image: url("images/background.png");
+    background-color: #121212;
+    color: white;
+    margin-top: 0;
+}
+
+.header-content {
+    min-width: 70%;
+    height: 208px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.find-film {
+    font-weight: 800;
+    font-size: 43px;
+    line-height: 24px;
+    letter-spacing: -0.045em;
+}
+
+.watchlist {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#form {
+    margin: 30px 30px;
+    display: flex;
+    justify-content: center;
+    ;
+}
+
+.search-window {
+    width: 400px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #D1D5DB;
+}
+
+#film-content {
+    height: 100%;
+    width: 100%;
+    margin: 30px 30px;
+
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid #E5E7EB;
+
+}
+
+img {
+    width: 99px;
+    height: 148px;
+    border-radius: 2.5px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.title-star-rate,
+.time-genre-watchlist,
+.desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.rate {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.time-genre-watchlist {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.genre {
+    margin: 0 10px;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+.start {
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.start-exploring {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #DFDDDD;
+}
+
+.start-icon {
+    width: 70px;
+    height: 61.25px;
+}
