@@ -1,9 +1,24 @@
+import Film from "./Film.js"
+
 const filmContent = document.getElementById("film-content")
 const watchlistContent = document.getElementById("watchlist-content")
+const searchBtn = document.getElementById("search-btn")
+const searchWindow = document.getElementById("search-window")
 
-fetch("http://www.omdbapi.com/?apikey=a2742fc0&t=titanic")
-    .then(resp => resp.json())
-    .then(data => console.log(data))
+
+// title=searchWindow.value
+
+searchBtn.addEventListener("click", function () {
+    fetch("http://www.omdbapi.com/?apikey=a2742fc0&t=titanic")
+        .then(resp => resp.json())
+        .then(data => {
+            let newFilm = new Film(data)
+            console.log(newFilm)
+            filmContent.innerHTML = newFilm.getNewFilmHtml()
+            console.log(data)
+        })
+})
+
 
 
 // 1.Pobrać dane z API

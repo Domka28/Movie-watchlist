@@ -18,8 +18,9 @@
     </header>
     <section id="form">
         <form action="/action_page.php" method="post">
-            <input class="search-window" type="text" placeholder="Search for a movie" name="fname" required>
-            <input type="submit" value="Search">
+            <input id="search-window" class="search-window" type="text" placeholder="Search for a movie" name="fname"
+                required>
+            <input id="search-btn" type="submit" value="Search">
         </form>
 
     </section>
@@ -57,7 +58,7 @@
             <h1 class="start-exploring">Unable to find what you’re looking for. Please try another search.</h1>
         </div> -->
     </section>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>
