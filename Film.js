@@ -7,16 +7,6 @@ class Film {
     getNewFilmHtml() {
         const { Title, Genre, imdbRating, Runtime, Poster, Plot } = this
 
-        // const film = {
-        //     Title: Title,
-        //     Genre: Genre,
-        //     imdbRating: imdbRating,
-        //     Runtime: Runtime,
-        //     Poster: Poster,
-        //     Plot: Plot
-        // }
-        // const filmInString = JSON.stringify(film)
-        // console.log("Film:", filmInString)
         return `<div class="section-content">
             <div>
                 <img src="${Poster}">
