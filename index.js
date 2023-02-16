@@ -14,8 +14,8 @@ searchBtn.addEventListener("click", function (e) {
 
                 if (data.Response === "False") {
                     filmContent.innerHTML = `<div class="start">
-                <h1 class="start-exploring">Unable to find what you’re looking for. Please try another search.</h1>
-            </div>`
+                    <h1 class="start-exploring">Unable to find what you’re looking for. Please try another search.</h1>
+                </div>`
                 } else {
                     let newFilm = new Film(data)
                     filmContent.innerHTML = newFilm.getNewFilmHtml()
@@ -27,13 +27,24 @@ searchBtn.addEventListener("click", function (e) {
 
 document.addEventListener("click", function (e) {
     if (e.target.dataset.add) {
-        // console.log(e.target.dataset.add)
-        // const filmData = JSON.parse(e.target.dataset.add)
-        // console.log(filmData)
-        localStorage.setItem('Movies', e.target.dataset.add);
-
+        let titleInString = e.target.dataset.add
+        let moviesArray
+        if (localStorage.getItem('Movies') == null) {
+            moviesArray = []
+        } else {
+            moviesArray = JSON.parse(localStorage.getItem('Movies'))
+        }
+        if (!moviesArray.includes(titleInString)) {
+            moviesArray.push(titleInString)
+            localStorage.setItem('Movies', JSON.stringify(moviesArray))
+        }
     }
 })
 
 
 
+// 1. Musimy ogarnąć local sotrage, żeby zapisywać więcej filmów
+// 2. Musimy ogarnąć przycisk remove
+// 3. Musimy ogarnąć przechodzenie do str głównej z poziomu watchlist - pzycisk
+// 4. PO usunięciu filmów z watchlist powrót do pierwotnego stanu
+// 5. Zmiana wyglądu przycisków i ogólnie css
