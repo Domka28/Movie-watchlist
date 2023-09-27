@@ -43,8 +43,3 @@ document.addEventListener("click", function (e) {
 
 
 
-// 1. Musimy ogarnąć local sotrage, żeby zapisywać więcej filmów
-// 2. Musimy ogarnąć przycisk remove
-// 3. Musimy ogarnąć przechodzenie do str głównej z poziomu watchlist - pzycisk
-// 4. PO usunięciu filmów z watchlist powrót do pierwotnego stanu
-// 5. Zmiana wyglądu przycisków i ogólnie css
