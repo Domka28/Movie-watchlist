@@ -22,7 +22,7 @@ function render() {
         watchlistContent.innerHTML = ""
         for (let movie of moviesArray) {
             console.log(movie)
-            fetch(`http://www.omdbapi.com/?apikey=a2742fc0&t=${movie}`)
+            fetch(`https://www.omdbapi.com/?apikey=a2742fc0&t=${movie}`)
                 .then(resp => resp.json())
                 .then(data => {
                     let newFilm = new Film(data)
