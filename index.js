@@ -8,7 +8,7 @@ const searchWindow = document.getElementById("search-window")
 searchBtn.addEventListener("click", function (e) {
     e.preventDefault()
     if (searchWindow.value) {
-        fetch(`http://www.omdbapi.com/?apikey=a2742fc0&t=${searchWindow.value}`)
+        fetch(`https://www.omdbapi.com/?apikey=a2742fc0&t=${searchWindow.value}`)
             .then(resp => resp.json())
             .then(data => {
 
